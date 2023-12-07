@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Adding Using Javascript</title>
+</head>
+<body>
+  <form>
+    <table>
+      <tr>
+        <td >A:</td><td><input type="text" id="A"></td>
+        <td >B:</td><td><input type="text" id="B"></td>
+        
+      </tr>
+    </table>
+  </form>
+  
+  <button onclick="Adding()">Add Here</button>
+    <p>The Result is:</p>
+   <p id="result">
+
+   </p>
+
+  <script>
+
+    var val1 = document.getElementById("A")
+    var val2 = document.getElementById("B")
+
+    var result = document.getElementById("result")
+
+    function Adding(){
+      var box1 = Number(val1.value)
+      var box2 = Number(val2.value)
+
+      var Total = box1+box2
+
+      result.textContent = Total
+    }
+  </script>
+</body>
+</html>

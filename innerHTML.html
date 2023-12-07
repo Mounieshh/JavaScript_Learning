@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>innerHTML</title>
+</head>
+<body>
+    <ul id="list">
+        <li>Home</li>
+        <li></li>
+    </ul>
+
+    <script>
+
+        //Usind innerHTML
+
+        var list = document.getElementById('list')
+        var local = document.createElement('li')
+        local.textContent = 'Nijamellam Marandhupochu'
+        list.append(local)
+        console.log(list.innerHTML);
+
+        
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>createAdjacentElement</title>
+</head>
+<body>
+    <div id="swin">
+        <ul id="swim">
+            <li>Home</li>
+        </ul>
+    </div>
+    <script>
+        var swim = document.querySelector('#swim')
+        var swan = document.createElement('h1')
+        var wan = document.createElement('h1')
+        var an = document.createElement('h1')
+        var n = document.createElement('h1')
+        swan.textContent = prompt("Enter 1st:")
+        wan.textContent = prompt("Enter 2nd:")
+        an.textContent = prompt("Enter 3rd:")
+        n.textContent = prompt("Enter 4th:")
+
+        swim.insertAdjacentElement('afterbegin',swan)
+        swim.insertAdjacentElement('beforebegin', wan)
+        swim.insertAdjacentElement('beforeend', an)
+        swim.insertAdjacentElement('afterend', n)
+
+    </script>
+</body>
+</html>

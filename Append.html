@@ -1,0 +1,22 @@
+<html>
+    <title>Raw</title>
+</html>
+<body>
+    <button onclick="update()">Click Here</button>
+ <div id="Thing">
+    <h1>Javascript</h1>
+ </div>
+
+ <script>
+    var div = document.getElementById("Thing")
+    function update(){
+
+        let dev = document.createElement("h1")
+        dev.textContent = prompt("Enter Valid Name:")
+        div.append(dev)
+
+
+    }
+
+ </script>
+</body>
