@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Creating element -->
+    <div id="click">
+        <button id="btn" onclick="clickt()">Click this</button>
+    </div>
+    <script>
+        function clickt(){
+        var div = document.createElement('h1')
+
+        div.innerHTML = '<p>Hey there Money Bags</p>'
+
+        document.body.appendChild(div)
+        }
+    </script> 
+
+
+
+    <!-- Creating element for Script element-->
+     <script>
+        function scrcreate(url){
+            let script = document.createElement('script')
+            script.src = url
+            document.body.appendChild(script)
+        }
+
+        scrcreate('script.js')
+    </script> 
+
+    
+     
+
+</body>
+</html>

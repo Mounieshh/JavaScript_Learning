@@ -1,0 +1,68 @@
+<!-- <html>
+    <head>
+        <title>DOM</title>
+    </head>
+    <style>
+        input{
+            border-color: red;
+            width: 70%;
+        }
+    </style>
+    <body > 
+        <h1 id="show">Harold</h1>
+        <button onclick="update(event)">Maverick</button>
+        <button onclick="update(event)">robert</button>
+        <button onclick="update(event)">Tony</button>
+
+
+        <script>
+
+            var show = document.getElementById("show")
+            function update(event){
+                
+               show.textContent = event.target.textContent
+            }
+        </script> 
+
+        </script>
+    </body>
+</html> -->
+
+<!-- <html>
+    <head>
+        <title>DOM</title>
+    </head>
+    <body>
+        
+        <button id="Fade" onclick="chick()">Press2</button>
+        <div id="go">
+
+        </div>
+    </body>
+    <script>
+  var Fade = document.getElementById("Fade");
+
+  function chick() {
+    Fade.style.backgroundColor = "blue";
+  }
+</script>
+</html> -->
+
+
+<html>
+    <title>Prepend</title>
+</html>
+<body>
+    
+    <div>
+        <h2>Stark</h2>
+        <h2>Loki</h2>
+    </div>
+
+    <script>
+        var div = document.querySelector("div")
+        var h1 = document.createElement("h1")
+        h1.textContent = "Hello"
+        div.insertAdjacentElement("beforeend",h1)
+    </script>
+</body>

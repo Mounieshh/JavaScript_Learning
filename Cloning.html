@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cloning Node</title>
+</head>
+<body>
+    
+    <div id="nav">
+        <ul id="navhead">
+            <li>Home</li>
+            <li>Products</li>
+            <li>About us</li>
+        </ul>
+    </div>
+
+    <script>
+        var navhead = document.getElementById('navhead')
+
+        var navmedia = navhead.cloneNode(true)
+        navmedia.id = 'nav-phone'
+        document.body.appendChild(navmedia)
+    </script>
+</body>
+</html>

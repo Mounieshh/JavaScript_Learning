@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Javascript - Before()</title>
+</head>
+<body>
+    <div id="yalk">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, impedit.
+        </p>
+    </div>
+    <button id="btn" onclick="hero()">
+        Donate Here
+    </button>
+    <div id="yoga">
+
+    </div>
+
+    <script>
+        var yalk = document.getElementById('yalk')
+        var newone = document.createElement('h1')
+        newone.innerText = "Hey there Money Bags"
+        yalk.before(newone)
+        yalk.after(newone)
+
+        //Example using Button
+
+        var button = document.getElementById('btn')
+        button.firstChild.before('🥚')
+        button.lastChild.after('🥚')
+
+        function hero() {
+            var yoga = document.getElementById('yoga')
+
+            var aasanaas = document.createElement('h1')
+            aasanaas.textContent = prompt("Enter anything:")
+            yoga.append(aasanaas)
+            
+        }
+    
+    </script>
+</body>
+</html>

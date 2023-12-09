@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <title>Setting And Getting Attributes</title>
+</head>
+<body>
+    <form>
+        <label for="">Username:</label><input type="text" id="inp">
+        
+        <label for=""> Password</label><input  id="inp2" required>
+        <button id="btn-2">Save </button>
+        <button id="btn-id">Login</button>
+    </form>
+
+    <form >
+        <label>Action</label><input id="input-3">
+    </form>
+
+    <script>
+        var input = document.getElementById("inp")
+        var input2 = document.getElementById("inp2")
+//Using Dot Method
+        console.log(input.id);
+        console.log(input2.type);
+        input.value = "Yakusa"
+        console.log(input.value);
+
+//By SetAttribute Method
+        input2.type = "password"
+        console.log(input2.type);
+    
+//Task By Dot Method
+        var inp3 = document.getElementById("input-3")
+
+        inp3.id = "maxii"
+        inp3.value = "Say Something"
+        inp3.type = "radio"
+        inp3.value = "Wolf"
+
+        console.log(inp3);
+
+//Task by setAttribute Method
+inp3.setAttribute("type","range")
+inp3.setAttribute("value","Wall")
+inp3.setAttribute("id","rcb")
+
+console.log(inp3);
+
+//Getting attributes
+
+var tin = inp3.getAttribute("type")
+inp3.getAttribute("id")
+console.log(tin);
+
+console.log(inp3.attributes);
+    </script>
+</body>
+</html>
