@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Replace Element</title>
+</head>
+<body>
+    <div id="king">
+        <ul id="queen">
+            <li>HomePage</li>
+            <li>Web Page</li>
+        </ul>
+
+        <ul id="soldier">
+            <li>About page</li>
+            <li>Contact page</li>
+        </ul>
+
+        <button id="btn" onclick="chopper()">Dubai</button>
+        <button id="btn2" onclick="slicer()">Saudi</button>
+    </div>
+
+    <script>
+
+        var queen = document.getElementById('queen')
+
+        function chopper() {
+            var fresh = document.createElement('li')
+            fresh.textContent = 'Thank you Ester'
+            queen.replaceChild(fresh,queen.firstElementChild)
+        }
+        function slicer(){
+            var soldier = document.getElementById('soldier')
+            soldier.removeChild(soldier.lastElementChild)
+        }
+
+
+    </script>
+</body>
+</html>

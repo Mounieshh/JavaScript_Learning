@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Query Selector</title>
+</head>
+
+<style>
+    .navbar{
+        margin: 20px;
+        padding: 40px;
+    }
+    #list-item{
+        color: lightcoral;
+        font-weight: 800;
+        font-size: 30px;
+    }
+</style>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul id="list-head">
+                <li id="list-item">Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        var listitem = document.querySelector('.navbar')
+        var listhead = document.querySelector('#list-head')
+        var listbon  = document.querySelectorAll("#listhead")
+
+        //ParentNode
+        console.log(listhead.parentNode);
+        console.log(listitem);
+
+        //SiblingsNode
+        console.log(listitem.nextElementSibling);
+        console.log(listitem.nextSibling)
+        console.log(listhead.nextElementSibling);
+        console.log(listhead.nextSibling);
+
+    </script>
+</body>
+</html>
