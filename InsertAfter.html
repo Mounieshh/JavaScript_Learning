@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert After</title>
+</head>
+<body>
+    <ul id="jake" class="kage" onclick="blur()">
+        <li>Home</li>
+        <li>Design</li>
+        <li>Contact</li>
+    </ul>
+
+    <script>
+        function insertAfter(newNode, existingNode) {
+            existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+        }
+        function insertBefore(newNode, existingNode) {
+            existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling)
+        }
+        var jake = document.getElementById('jake')
+
+        //create new list element
+
+        var li = document.createElement("li")
+        li.textContent = "Literature"
+        var li2 = document.createElement("li")
+        li2.textContent = "Services"
+
+        insertAfter(li,jake.lastElementChild)
+        insertBefore(li2,jake.firstElementChild)
+
+    </script>
+</body>
+</html>
